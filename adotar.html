@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/toggle_button.css">
+    <link rel="stylesheet" href="./css/styleAdocao.css">
+    <title>Adoção</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="">ONG</a>
+                </li>
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="botaoTema" />
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="form-item">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="form-item">
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone">
+            </div>
+
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-item">
+                <span>Renda</span>
+                <div class="form-item-radio">
+                    <label for=""></label>
+                    <input type="radio" name="renda" id="renda1000" value="1000">
+                    <label for="renda1000">Até 1000 reais</label>
+                </div>
+
+                <div class="form-item-radio">
+                    <label for=""></label>
+                    <input type="radio" name="renda" id="renda5000" value="5000">
+                    <label for="renda5000">Até 5000 reais</label>
+                </div>
+
+                <div class="form-item-radio">
+                    <label for=""></label>
+                    <input type="radio" name="renda" id="renda10000" value="10000">
+                    <label for="renda10000">Até 10000 reais</label>
+                </div>
+
+                <div class="form-item">
+                    <label for="">Informe o tipo da sua residencia</label>
+                    <select name="residencia" id="residencia" >
+                    
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="sitio">Sitio</option>
+                    </select>
+                </div>
+
+              <div class="form-item">
+                <label for="intencao">Informe suas intenções para adoção</label>
+                <textarea name="intencao" id="intencao" ></textarea>
+              </div>
+
+              <div>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+        </form>
+    </main>
+    <script src="./js/alteratema.js"></script>
+    <script src="./js/adotar.js"></script>
+    
+</body>
+
+</html>
